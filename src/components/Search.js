@@ -3,13 +3,13 @@ import { View, Text, TextInput } from 'react-native';
 
 const Search = () => {
 
-	const { searchContainer, inputStyles } = styles;
+	const { containerStyle, inputStyle } = styles;
 
 	return (
-		<View>
+		<View styoe={containerStyle}>
 			<Text>Search</Text>
-			<TextInput />
-			<TextInput />
+			<TextInput style={inputStyle} />
+			<TextInput style={inputStyle} />
 		</View>
 	)
 }
@@ -20,7 +20,7 @@ const styles = {
 		alignItems: 'center'
 	},
 	inputStyle: {
-
+		padding: 5,
 	}
 }
 
